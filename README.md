@@ -1,6 +1,6 @@
 # Задача №1 - Мили
 
-## Исходный код task_31.class
+## Исходный код Task_31.class
 ```java
 import java.util.InputMismatchException;
 import java.util.Scanner;
