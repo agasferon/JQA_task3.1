@@ -1,28 +1,28 @@
 # Задача №1 - Мили
 
-## Исходный код Task_31.class
+## Исходный код TaskMiles.class
 ```java
 import java.util.InputMismatchException;
 import java.util.Scanner;
-public class Task_31 {
+public class TaskMiles {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
         System.out.print("Input a ticket price: ");
-        int ticket_price = 0;
+        int ticketPrice = 0;
 
         try {
-            ticket_price = in.nextInt();
+            ticketPrice = in.nextInt();
         }
         catch (InputMismatchException e) {
             System.out.println("Value exceeded");
         }
 
-        if (ticket_price <= 0){
+        if (ticketPrice <= 0){
             System.out.println("Are you sure?");
         } else {
-            int bonus_miles = ticket_price / 20;
-            System.out.println("You get " + bonus_miles + " bonus miles!");
+            int bonusMiles = ticketPrice / 20;
+            System.out.println("You get " + bonusMiles + " bonus miles!");
         }
     }
 }
